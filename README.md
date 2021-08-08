@@ -1,2 +1,4 @@
 # ToDoList
-Typical todolist project
+Typical todolist project 
+
+Mentors - Victor&Igor
