@@ -15,12 +15,12 @@ function App() {
         {id: v1(), name: 'Ella Fitzgerald  ', isDone: false},
     ])
 
-        const removeTask = (taskID: string) => {
+    const removeTask = (taskID: string) => {
         const filter = tasks2.filter(t => t.id !== taskID)
         setTasks(filter)
     }
 
-        const addTask = (name: string) => {
+    const addTask = (name: string) => {
         const newTask: ListType = {
             id: v1(),
             name,
@@ -29,7 +29,12 @@ function App() {
         setTasks([newTask, ...tasks2])
     }
 
-    
+    const changeTaskStatus = (tId: string, isDone: boolean) => {
+
+        const updatedTasks = tasks2.map(t => t.id === tId ? {...t, isDone} : t)
+
+        setTasks(updatedTasks)
+    }
 
     return (
         <div>
@@ -38,6 +43,7 @@ function App() {
                           tasks={tasks2}
                           removeTask={removeTask}
                           addTask={addTask}
+                          changeTaskStatus={changeTaskStatus}
                 />
             </div>
         </div>

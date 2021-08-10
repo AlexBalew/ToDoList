@@ -6,3 +6,23 @@
 .App > div {
   margin-right: 50px;
 }
+
+.active-filter {
+  background-color: darkcyan;
+}
+
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+.AddTaskField {
+  display: flex;
+}
+
+.is-done {
+  opacity: 0.5;
+}

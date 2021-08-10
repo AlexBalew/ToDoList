@@ -1,9 +1,11 @@
 import React from "react";
 
 
+
 export type propsButtonType = {
     callBack: () => void
-   title: string
+    title: string
+
 }
 
 export const UniversalButton = (props: propsButtonType) => {
