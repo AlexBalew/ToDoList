@@ -7,20 +7,16 @@
   margin-right: 50px;
 }
 
-.active-filter {
-  background-color: darkcyan;
-}
-
 .error {
-  border-color: red;
+  border: red 1px solid;
 }
 
 .error-message {
   color: red;
 }
 
-.AddTaskField {
-  display: flex;
+.active-filter {
+  background-color: aquamarine;
 }
 
 .is-done {
